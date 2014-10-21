@@ -341,13 +341,13 @@ def main():
                 x = x + 1
         else: #If it isn't EE, it is an MBR disk.  The offsets are known, and there are only 4 partitions, so the calls to the mbrParse function written out manually.
             print("Your drive is MBR")
-            mbrParse(data, 445, 1)
+            mbrParse(data, 446, 1)
             print()
-            mbrParse(data, 461, 2)
+            mbrParse(data, 462, 2)
             print()
-            mbrParse(data, 477, 3)
+            mbrParse(data, 478, 3)
             print()
-            mbrParse(data, 493, 4)
+            mbrParse(data, 494, 4)
 
 
         #endOfMbr = hexFormat(data, 510) + hexFormat(data, 511)
